@@ -16,8 +16,8 @@ namespace PersonalWebsite
             BundleTable.Bundles.UseCdn = true;
 #endif
 
-            bundles.Add(new StyleBundle("~/Content/css", "https://ajax.aspnetcdn.com/ajax/bootstrap/2.3.2/css/bootstrap.css")
-                .Include("~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/Content/css", "https://ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.css")
+                .Include("~/Content/bootstrap.min.css"));
 
             bundles.Add(new StyleBundle("~/bundles/css")
                 .Include("~/Content/particles.css")
