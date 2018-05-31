@@ -16,22 +16,22 @@ namespace PersonalWebsite
             BundleTable.Bundles.UseCdn = true;
 #endif
 
-            bundles.Add(new StyleBundle("~/Content/css", "https://ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.css")
+            bundles.Add(new StyleBundle("~/Content/css", "https://stackpath.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
                 .Include("~/Content/bootstrap.min.css"));
 
             bundles.Add(new StyleBundle("~/bundles/css")
                 .Include("~/Content/particles.css")
-                .Include("~/Content/Site.css")
-                .Include("~/Content/styles.css"));
+                .Include("~/Content/style.css")
+                .Include("~/Content/Site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/common-js", "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.js")
                 .Include("~/Scripts/jquery-3.0.0.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/bootstrap.js")
-                .Include("~/Scripts/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://stackpath.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+                .Include("~/Scripts/bootstrap.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/particles")
-                .Include("~/Scripts/particles.js"));
+            bundles.Add(new ScriptBundle("~/bundles/particles", "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js")
+                .Include("~/Scripts/particles.min.js"));
 
         }
     }
