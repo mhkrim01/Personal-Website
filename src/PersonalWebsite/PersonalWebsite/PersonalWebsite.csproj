@@ -109,6 +109,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Pictures\4f281a89-1507-4387-8aa7-bba636d643a9.png" />
+    <Content Include="Content\Pictures\linkedin2.PNG" />
     <Content Include="Content\Pictures\resume pic 2.PNG" />
     <Content Include="Content\Pictures\resume pic.PNG" />
     <Content Include="Content\Site.css" />
