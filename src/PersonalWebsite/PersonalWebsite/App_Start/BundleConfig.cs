@@ -19,9 +19,11 @@ namespace PersonalWebsite
             bundles.Add(new StyleBundle("~/Content/css", "https://stackpath.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
                 .Include("~/Content/bootstrap.min.css"));
 
+            //bundles.Add(new StyleBundle("~/bundles/css", "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"));
+
             bundles.Add(new StyleBundle("~/bundles/css")
                 .Include("~/Content/particles.css")
-                .Include("~/Content/style.css")
+                .Include("~/Content/styles.css")
                 .Include("~/Content/Site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/common-js", "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.js")
