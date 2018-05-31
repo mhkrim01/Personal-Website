@@ -5,34 +5,39 @@
 }
 @*<div class="row">*@
 @*<div class="col-lg-6" style="background-color: floralwhite;">*@
-    <h2>About Me</h2>
+<h2 id="h2-head">About Me</h2>
+<div class="panel-body">
+    <h3 id="h3-head">Some Background</h3>
     <div id="view">
-        <h3 style="text-align: center;">Some Background</h3>
-        <div id="view">
-            My name is Michael Krimm, or just Mike, and I'm from Meade county Kentucky. I grew up surrounded by nature and the woods and I have a strong appreciation
-            of the outdoors. I come from a large family; myself, my younger brother and 3 older sisters. Oh, and we have a few amazing dogs, Bubba and Zeus.
-            <h4>Hobbies</h4>
+        My name is Michael Krimm, or just Mike, and I'm from Meade county Kentucky. I grew up surrounded by nature and the woods and I have a strong appreciation
+        of the outdoors. I come from a large family; myself, my younger brother and 3 older sisters. Oh, and we have a few amazing dogs, Bubba and Zeus.
+        <h4>Hobbies</h4>
 
-            Hiking, painting, and drawing are a few of my favorite hobbies. I love being creative and finding new and cool outlets in which I can express myself.
-            I have to say my favorite medium of expression is through my art. Something about being able to pick up a pen or brush and create something truly original is just awesome.
-            I've never taken an art lesson outside of the stuff from school, so I'm completely self taught, and I have to say I don't think I'm terrible.
+        Hiking, painting, and drawing are a few of my favorite hobbies. I love being creative and finding new and cool outlets in which I can express myself.
+        I have to say my favorite medium of expression is through my art. Something about being able to pick up a pen or brush and create something truly original is just awesome.
+        I've never taken an art lesson outside of the stuff from school, so I'm completely self taught, and I have to say I don't think I'm terrible.
 
-            <h4>Education</h4>
+        <h4>Education</h4>
 
-            I graduated from Meade County Highschool in 2015 and started my college career shortly thereafter at the University of Louisville. UofL always seemed like a very
+        I graduated from Meade County Highschool in 2015 and started my college career shortly thereafter at the University of Louisville. UofL always seemed like a very exciting, 
+        and diverse university. I have learned alot so far in my college career, and have met some amazing people. Though the university as a whole is facing challenges currently,
+        I'm sure it will be able to turn over a new leaf, and keep marching forward.
 
-            <h4>Career</h4>
+        <h4>Career</h4>
 
-            I chose my major in Computer Information Systems because I saw it as a way for me to make an impact in today's world. More and more aspects
-            of our daily lives are being impacted by technology with all its positives and negatives, so having a knowledge base that allows me to better understand
-            and grapple with the challenges we're going to face will benefit not only me, but many others in my life. Currently, I'm trying to gain as much experience as
-            I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
-            my resume, posted in a link below, for a quick overview.
-
-            <div class="container" id="#view">
-                 <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"><img src="~/Content/Pictures/resume pic 2.PNG" id="view" /></a>
-            </div>
-
+        I chose my major in Computer Information Systems because I saw it as a way for me to make an impact in today's world. More and more aspects
+        of our daily lives are being impacted by technology with all its positives and negatives, so having a knowledge base that allows me to better understand
+        and grapple with the challenges we're going to face will benefit not only me, but many others in my life. Currently, I'm trying to gain as much experience as
+        I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
+        my resume, posted below, for a quick overview. <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview">Click here to download a copy!</a>
+        <div>
+            <object class="hidden-xs hidden-sm" data="~/Content/Files/Michael Krimm  IT Resume.pdf" type="application/pdf" width="100%" height="800px" internalinstanceid="13" style="padding-top: 20px; padding-bottom: 5px;">
+                <p>
+                    It appears you don't have a PDF plugin for this browser.
+                    <a href="~/Content/Files/Michael Krimm  IT Resume.pdf">Click here to download a copy!</a>
+                </p>
+            </object>
+        </div>
     </div>
 </div>
 @*</div>*@
@@ -40,6 +45,7 @@
 
 <div id="particles-js"></div>
 <script src="~/Scripts/particles.js"></script>
+@System.Web.Optimization.Scripts.Render("~/bundles/particles")
 
 
 @*<iframe src="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview" width="640" height="480"></iframe>">*@

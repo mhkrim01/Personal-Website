@@ -3,6 +3,77 @@
     ViewBag.Title = "Home";
 }
 
+@*<div class="container" id="gallery-container">
+    <h1 id="gallery-heading">If you want,<span>here's some of my artwork to browse through!</span></h1>
+    <div id="gallery">
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170424_021301.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170503_194606.jpg" />
+        </div>
+        <div id="gallery-item" style="transform: rotate(-90deg);">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170504_173505.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170623_170343.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170718_171106.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20171009_041340.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20180501_211049.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170817_153848.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170721_165805.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170720_180204.jpg" />
+        </div>
+        <div id="gallery-item">
+            <img id="div-gallery-big-image" src="~/Content/Pictures/20170421_172754.jpg" />
+        </div>
+    </div>
+</div>*@
+
+<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="~/Content/Pictures/20170421_172754.jpg" style="transform: rotate(90deg);" alt="Cool bird thing" class="img-responsive" />
+            <div class="carousel-caption">
+                <h3>LOL</h3>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Pictures/20170424_021301.jpg" style="transform: rotate(90deg);" alt="My brain" class="img-responsive" />
+        </div>
+
+        <div class="item">
+            <img src="~/Content/Pictures/20170503_194606.jpg" style="transform: rotate(90deg);" alt="spaceman" class="img-responsive" />
+        </div>
+    </div>
+
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
 
 <div id="particles-js"></div>
 <script src="~/Scripts/particles.js"></script>
