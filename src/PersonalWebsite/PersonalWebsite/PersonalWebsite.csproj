@@ -161,6 +161,7 @@
     <Content Include="Content\Fonts\Archivo-Narrow\Archivo-Narrow\ArchivoNarrow-SemiBoldItalic.ttf" />
     <Content Include="Content\Fonts\webfontkit-20180531-145430\archivonarrow-regular-webfont.woff" />
     <Content Include="Content\Fonts\webfontkit-20180531-145430\archivonarrow-regular-webfont.woff2" />
+    <None Include="Properties\PublishProfiles\michaelkrimm - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -196,6 +197,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -213,6 +215,8 @@
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Views\Shared\Navbar.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\ServerError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
