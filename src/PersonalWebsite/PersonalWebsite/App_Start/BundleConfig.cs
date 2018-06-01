@@ -32,8 +32,11 @@ namespace PersonalWebsite
             bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://stackpath.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
                 .Include("~/Scripts/bootstrap.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/particles", "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js")
-                .Include("~/Scripts/particles.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/particles", "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js")
+                .Include("~/Scripts/particles.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app-js")
+                .Include("~/Scripts/app.js"));
 
         }
     }

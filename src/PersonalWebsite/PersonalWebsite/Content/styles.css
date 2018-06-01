@@ -15,6 +15,7 @@ body {
 
 #header {
     /*background: rgba(12, 10, 10, 0.57);*/
+    
     padding: 10px;
 }
 
@@ -25,6 +26,7 @@ body {
     padding-bottom: 60px; /* Height of the footer */
     margin-left: 350px;
     margin-right: 350px;
+    margin-top: 30px;
 }
 
 #footer {
