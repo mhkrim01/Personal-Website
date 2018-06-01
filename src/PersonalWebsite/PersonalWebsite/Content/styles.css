@@ -20,13 +20,15 @@ body {
 }
 
 #body {
-    background-color: rgba(237, 222, 222, 0.72);
+    /*background-color: rgba(237, 222, 222, 0.72);*/
+    background: rgba(242, 226, 226, 0.09);
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 60px; /* Height of the footer */
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 30px;
+
 }
 
 #footer {
@@ -34,13 +36,13 @@ body {
     bottom: 0;
     width: 100%;
     height: 60px; /* Height of the footer */
-    background: rgba(12, 10, 10, 0.57);
+    background: transparent;
 }
 
 #h2-head {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: center;
     border: 2px solid #172838;
     padding: 6px 0;
@@ -60,14 +62,6 @@ body {
     font-size: 20px;
 }
 
-    #nav li {
-        color: floralwhite;
-    }
-
-#a a:hover {
-    color:black;
-    background-color: dimgrey;
-}
 
 
 /*------------------------------------image gallery styling------------------------------------------*/
@@ -82,6 +76,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     padding: 3.5rem 0;
+    border: 3px solid;
 }
 
 #gallery-heading span{
@@ -128,4 +123,4 @@ body {
     transform: scale(.99) rotate(90deg);
 }
 
------------------------carousel styling-----------------------------------------------------
+/*--------------------------------carousel styling------------------------------------------------*/
