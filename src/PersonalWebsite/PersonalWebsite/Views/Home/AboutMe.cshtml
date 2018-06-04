@@ -4,6 +4,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script>
+    /**
+    * Function that tracks a click on an outbound link in Google Analytics.
+    * This function takes a valid URL string as an argument, and uses that
+    * URL string as the event label.
+    */
+    var trackOutboundLink = function (url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function () {
+                document.location = url;
+                alert("Are you sure you want to leave?");
+            }
+        });
+    }
+</script>
+
 <h2 id="h2-head">About Me</h2>
 <div class="panel-body">
     <h3 id="h3-head">Some Background</h3>
@@ -18,7 +35,7 @@
 
         <h4>Education</h4>
 
-        I graduated from Meade County Highschool in 2015 and started my college career shortly thereafter at the University of Louisville. UofL always seemed like a very exciting, 
+        I graduated from Meade County Highschool in 2015 and started my college career shortly thereafter at the University of Louisville. UofL always seemed like a very exciting,
         and diverse university. I have learned alot so far in my college career, and have met some amazing people. Though the university as a whole is facing challenges currently,
         I'm sure it will be able to turn over a new leaf, and keep marching forward.
 
@@ -28,7 +45,10 @@
         of our daily lives are being impacted by technology with all its positives and negatives, so having a knowledge base that allows me to better understand
         and grapple with the challenges we're going to face will benefit not only me, but many others in my life. Currently, I'm trying to gain as much experience as
         I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
-        my resume, posted below, for a quick overview. <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview">Click here to download a copy!</a>
+        my resume, posted below, for a quick overview. <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"
+                                                          onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;">
+            Click here to view and download a copy or do so below!
+        </a>
         <div>
             <object class="hidden-xs hidden-sm" data="~/Content/Files/Michael Krimm  IT Resume.pdf" type="application/pdf" width="100%" height="800px" internalinstanceid="13" style="padding-top: 20px; padding-bottom: 5px;">
                 <p>
@@ -40,5 +60,17 @@
     </div>
 </div>
 
+@*@section pagescripts{
 
+    @System.Web.Optimization.Scripts.Render("~/bundles/google-analytics")
+
+    <script>
+        (function (helper) {
+            $(function () {
+                helper.url = 'https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview';
+                helper.onready();
+            });
+        })(homeHelper)
+    </script>
+}*@
 
