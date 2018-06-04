@@ -130,6 +130,7 @@
     <Content Include="Content\Pictures\Logo-2C-21px-R.png" />
     <Content Include="Content\Pictures\Logo-White-21px-R.png" />
     <Content Include="Content\Pictures\Logo-White-34px-TM.png" />
+    <Content Include="Content\Pictures\personalpic.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\particles.css" />
     <Content Include="Content\styles.css" />
