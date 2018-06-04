@@ -125,9 +125,11 @@
     <Content Include="Content\Pictures\20170817_153848.jpg" />
     <Content Include="Content\Pictures\20171009_041340.jpg" />
     <Content Include="Content\Pictures\20180501_211049.jpg" />
+    <Content Include="Content\Pictures\GitHub-Mark-32px.png" />
     <Content Include="Content\Pictures\GitHub-Mark-Light-32px.png" />
-    <Content Include="Content\Pictures\GitHub_Logo.png" />
-    <Content Include="Content\Pictures\linkedin2.PNG" />
+    <Content Include="Content\Pictures\Logo-2C-21px-R.png" />
+    <Content Include="Content\Pictures\Logo-White-21px-R.png" />
+    <Content Include="Content\Pictures\Logo-White-34px-TM.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\particles.css" />
     <Content Include="Content\styles.css" />

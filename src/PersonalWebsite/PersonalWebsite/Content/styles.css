@@ -16,27 +16,28 @@ body {
 #header {
     /*background: rgba(12, 10, 10, 0.57);*/
     
-    padding: 10px;
+    padding: 5px;
 }
 
 #body {
     /*background-color: rgba(237, 222, 222, 0.72);*/
-    background: rgba(242, 226, 226, 0.09);
+    background: rgba(246, 238, 238, 0.89);
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 60px; /* Height of the footer */
     margin-left: 350px;
     margin-right: 350px;
-    margin-top: 30px;
-
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px; /* Height of the footer */
-    background: transparent;
+    height: 0px; /* Height of the footer */
+    /*background: transparent;*/
+    background: rgba(0, 0, 0, 0.71);
 }
 
 #h2-head {
@@ -57,9 +58,19 @@ body {
 
 #nav {
     background: transparent;
-    border: none;
+    border: solid 2px rgba(255, 255, 255, 0.83);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+#ul li a {
+    color: white;
+}
+
+#ul li a:hover{
+    color: rgba(255, 255, 255, 0.48)
 }
 
 
