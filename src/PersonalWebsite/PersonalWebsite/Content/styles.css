@@ -90,8 +90,37 @@ body {
     height: 100%;
 }
 
+.wrapper {
+    padding-left: 10px;
+}
 
+.image--cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center right;
+    transition: transform 500ms linear;
+}
 
+.image--cover:hover{
+    transform: scale(2);
+}
+
+.image--cover2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px;
+    object-fit: cover;
+    object-position: center right;
+    transition: transform 500ms ease-out;
+}
+
+.image--cover2:hover {
+    transform: scale(7) translateY(50%) translateX(0%);
+}
 
 /*------------------------------------image gallery styling------------------------------------------*/
 #gallery-container{
@@ -157,3 +186,8 @@ body {
 }
 
 /*--------------------------------carousel styling------------------------------------------------*/
+#button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

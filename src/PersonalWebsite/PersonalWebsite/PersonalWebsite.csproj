@@ -125,12 +125,15 @@
     <Content Include="Content\Pictures\20170817_153848.jpg" />
     <Content Include="Content\Pictures\20171009_041340.jpg" />
     <Content Include="Content\Pictures\20180501_211049.jpg" />
+    <Content Include="Content\Pictures\favicon-16x16.png" />
     <Content Include="Content\Pictures\GitHub-Mark-32px.png" />
     <Content Include="Content\Pictures\GitHub-Mark-Light-32px.png" />
     <Content Include="Content\Pictures\Logo-2C-21px-R.png" />
     <Content Include="Content\Pictures\Logo-White-21px-R.png" />
     <Content Include="Content\Pictures\Logo-White-34px-TM.png" />
+    <Content Include="Content\Pictures\p.png" />
     <Content Include="Content\Pictures\personalpic.jpg" />
+    <Content Include="Content\Pictures\Untitled.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\particles.css" />
     <Content Include="Content\styles.css" />
@@ -184,6 +187,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\unclickable.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

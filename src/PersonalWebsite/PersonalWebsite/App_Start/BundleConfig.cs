@@ -36,9 +36,8 @@ namespace PersonalWebsite
             bundles.Add(new ScriptBundle("~/bundles/app-js")
                 .Include("~/Scripts/app.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/google-analytics")
-                .Include("~/Scripts/google-analytics.js"));
-
+            bundles.Add(new ScriptBundle("~/bundles/unclickable")
+                .Include("~/Scripts/unclickable.js"));
         }
     }
 }
