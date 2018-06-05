@@ -22,7 +22,7 @@
                     'transport': 'beacon',
                     'hitCallback': function () {
                         document.location = url;
-                        alert();
+                        alert("YO!");
                     }
                 });
             };

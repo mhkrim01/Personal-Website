@@ -15,29 +15,33 @@
             'transport': 'beacon',
             'hitCallback': function () {
                 document.location = url;
-                alert("Are you sure you want to leave?");
+                alert("You are navigating to a new page");
             }
         });
     }
 </script>
 
+
 <h2 id="h2-head">About Me</h2>
 <div class="panel-body">
     <h3 id="h3-head">Some Background</h3>
     <div id="view">
-        My name is Michael Krimm, or just Mike, and I'm from Meade county Kentucky. I grew up surrounded by nature and the woods and I have a strong appreciation
-        of the outdoors. I come from a large family; myself, my younger brother and 3 older sisters. Oh, and we have a few amazing dogs, Bubba and Zeus.
+        My name is Michael Krimm, or just Mike, and I'm from Meade county, Kentucky which is about an hour southwest of Louisville.
+        I come from a large and amazing family; myself, my younger brother, 3 older sisters, and Mom and Dad. Oh, and we have a few amazing dogs, Bubba and Zeus.
         <h4>Hobbies</h4>
 
         Hiking, painting, and drawing are a few of my favorite hobbies. I love being creative and finding new and cool outlets in which I can express myself.
         I have to say my favorite medium of expression is through my art. Something about being able to pick up a pen or brush and create something truly original is just awesome.
-        I've never taken an art lesson outside of the stuff from school, so I'm completely self taught, and I have to say I don't think I'm terrible.
+        I've never taken an art lesson outside of the stuff from school, so I'm completely self taught, and I have to say I don't think I'm terrible. Hiking has always been one of my
+        favorite activites, since I grew up surrounded by nature. I have a strong appreciation of the outdoors and all the wonderful things it beholds.
 
         <h4>Education</h4>
 
         I graduated from Meade County Highschool in 2015 and started my college career shortly thereafter at the University of Louisville. UofL always seemed like a very exciting,
-        and diverse university. I have learned alot so far in my college career, and have met some amazing people. Though the university as a whole is facing challenges currently,
-        I'm sure it will be able to turn over a new leaf, and keep marching forward.
+        and diverse university. Originally, I planned to attend the JB Speed School of Engineering because math and science are some of my favorite topics, but due to the rigors of the program
+        and my working a third shift job trying to pay for school, I quickly came to realize I was not feeling fulfilled by that path. After some searching and contemplation I decided to switch
+        to the business school and pursue a degree in Computer Information Systems. I figured I'd be able to apply my problem solving and critical thinking skills to real world problems in a practical way.
+        I have learned alot so far in my college career, met some amazing people, and I'm excited, though somewhat nervous, to see what kind of path will unfold after graduation.
 
         <h4>Career</h4>
 
@@ -45,12 +49,27 @@
         of our daily lives are being impacted by technology with all its positives and negatives, so having a knowledge base that allows me to better understand
         and grapple with the challenges we're going to face will benefit not only me, but many others in my life. Currently, I'm trying to gain as much experience as
         I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
-        my resume, posted below, for a quick overview. <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"
-                                                          onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;">
+        my resume, posted below, for a quick overview.
+        @*@section pagescripts{
+
+
+
+            <script>
+                (function (helper) {
+                    $(function () {
+                        helper.onready();
+                        homeHelper.trackOutboundLink("https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview");
+                    });
+                })(homeHelper)
+            </script>
+        }*@
+        @*@System.Web.Optimization.Scripts.Render("~/bundles/google-analytics")*@
+        <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"
+           onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;">
             Click here to view and download a copy or do so below!
         </a>
         <div>
-            <object class="hidden-xs hidden-sm" data="~/Content/Files/Michael Krimm  IT Resume.pdf" type="application/pdf" width="100%" height="800px" internalinstanceid="13" style="padding-top: 20px; padding-bottom: 5px;">
+            <object class="hidden-xs hidden-sm" data="~/Content/Files/Michael Krimm  IT Resume.pdf" type="application/pdf" width="100%" height="700px" internalinstanceid="13" style="padding-top: 20px; padding-bottom: 5px;">
                 <p>
                     It appears you don't have a PDF plugin for this browser.
                     <a href="~/Content/Files/Michael Krimm  IT Resume.pdf">Click here to download a copy!</a>
@@ -60,17 +79,5 @@
     </div>
 </div>
 
-@*@section pagescripts{
 
-    @System.Web.Optimization.Scripts.Render("~/bundles/google-analytics")
-
-    <script>
-        (function (helper) {
-            $(function () {
-
-                helper.onready();
-            });
-        })(homeHelper)
-    </script>
-}*@
 
