@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div id="particles-js"></div>
+    <div id="particles-js"></div>@*particle background*@
 
     @System.Web.Optimization.Scripts.Render("~/bundles/common-js")
 
@@ -47,17 +47,6 @@
     @System.Web.Optimization.Scripts.Render("~/bundles/particles")
     @System.Web.Optimization.Scripts.Render("~/bundles/app-js")
 
-    @*@RenderSection("pagescripts", false)*@
-
-    @*google analytics script*@
-    @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120225268-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-120225268-1');
-        </script>*@
 
 </body>
 </html>
