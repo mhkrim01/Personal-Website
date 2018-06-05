@@ -3,7 +3,7 @@
     ViewBag.Title = "About Me";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section pagescripts{
 <script>
     /**
     * Function that tracks a click on an outbound link in Google Analytics.
@@ -20,12 +20,15 @@
         });
     }
 </script>
+    }
 
 
 <h2 id="h2-head">About Me</h2>
 <div class="panel-body">
     <h3 id="h3-head">Some Background</h3>
     <div id="view">
+        <h4>Where I'm From</h4>
+
         My name is Michael Krimm, or just Mike, and I'm from Meade county, Kentucky which is about an hour southwest of Louisville.
         I come from a large and amazing family; myself, my younger brother, 3 older sisters, and Mom and Dad. Oh, and we have a few amazing dogs, Bubba and Zeus.
         <h4>Hobbies</h4>
@@ -50,20 +53,6 @@
         and grapple with the challenges we're going to face will benefit not only me, but many others in my life. Currently, I'm trying to gain as much experience as
         I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
         my resume, posted below, for a quick overview.
-        @*@section pagescripts{
-
-
-
-            <script>
-                (function (helper) {
-                    $(function () {
-                        helper.onready();
-                        homeHelper.trackOutboundLink("https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview");
-                    });
-                })(homeHelper)
-            </script>
-        }*@
-        @*@System.Web.Optimization.Scripts.Render("~/bundles/google-analytics")*@
         <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"
            onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;">
             Click here to view and download a copy or do so below!
@@ -78,6 +67,3 @@
         </div>
     </div>
 </div>
-
-
-

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/Content/Pictures/favicon-16x16.png" />
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -40,13 +41,7 @@
 
     <div id="particles-js"></div>@*particle background*@
 
-    @System.Web.Optimization.Scripts.Render("~/bundles/common-js")
-
-    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
-
-    @System.Web.Optimization.Scripts.Render("~/bundles/particles")
-    @System.Web.Optimization.Scripts.Render("~/bundles/app-js")
-
-
+    @System.Web.Optimization.Scripts.Render("~/bundles/common-js", "~/bundles/bootstrap", "~/bundles/particles", "~/bundles/app-js")
+    @RenderSection("pagescripts")
 </body>
 </html>
