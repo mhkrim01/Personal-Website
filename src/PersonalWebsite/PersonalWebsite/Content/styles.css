@@ -116,7 +116,7 @@ body {
 #gallery{
     display: flex;
     flex-wrap: wrap;
-    margin: -50rem -50rem -50rem -50rem;
+    margin: 0 -1rem -1rem;
 }
 
 #gallery-item{
