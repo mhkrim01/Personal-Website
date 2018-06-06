@@ -10,6 +10,7 @@
                     throw new Error(keys[i] + "needs to be initialized");
                 }
             }
+            //makes button unclickable lol
             unclickable: $(function () {
                 $("button").on({
                     mouseover: function () {
