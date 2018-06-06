@@ -137,9 +137,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\particles.css" />
     <Content Include="Content\styles.css" />
-    <Content Include="ErrorPages\Markup\404.html" />
-    <Content Include="ErrorPages\Markup\500.html" />
-    <Content Include="ErrorPages\Styles\ErrorPageStyles.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app.js" />
@@ -157,7 +154,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="ErrorPages\Markup\404ErrorPage.cshtml" />
     <Content Include="Content\Files\Michael Krimm  IT Resume.pdf" />
     <Content Include="Content\Fonts\Archivo-Narrow\Archivo-Narrow\ArchivoNarrow-Bold.ttf" />
     <Content Include="Content\Fonts\Archivo-Narrow\Archivo-Narrow\ArchivoNarrow-BoldItalic.ttf" />
@@ -183,6 +179,7 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\trackLink.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />

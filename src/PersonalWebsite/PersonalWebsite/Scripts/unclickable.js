@@ -14,8 +14,8 @@
                 $("button").on({
                     mouseover: function () {
                         $(this).css({
-                            left: (Math.random() * 1500) + "px",
-                            top: (Math.random() * 500) + "px",
+                            left: (Math.random() * (window.innerWidth - $(this).width())) + "px",
+                            top: (Math.random() * (window.innerHeight - $(this).height())) + "px",
                         });
                     }
                 });

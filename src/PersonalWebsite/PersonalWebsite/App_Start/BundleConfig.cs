@@ -38,6 +38,12 @@ namespace PersonalWebsite
 
             bundles.Add(new ScriptBundle("~/bundles/unclickable")
                 .Include("~/Scripts/unclickable.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/trackLink")
+                .Include("~/Scripts/trackLink.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/google-analytics")
+                .Include("~/Scripts/google-analytics.js"));
         }
     }
 }

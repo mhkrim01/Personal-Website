@@ -3,23 +3,9 @@
     ViewBag.Title = "About Me";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 @section pagescripts{
-<script>
-    /**
-    * Function that tracks a click on an outbound link in Google Analytics.
-    * This function takes a valid URL string as an argument, and uses that
-    * URL string as the event label.
-    */
-    var trackOutboundLink = function (url) {
-        ga('send', 'event', 'outbound', 'click', url, {
-            'transport': 'beacon',
-            'hitCallback': function () {
-                document.location = url;
-                alert("You are navigating to a new page");
-            }
-        });
-    }
-</script>
+    @System.Web.Optimization.Scripts.Render("~/bundles/trackLink")
     }
 
 
@@ -54,7 +40,7 @@
         I can to become a more well rounded developer and so that I can contribute more with my work. If you're interested in some of my experience, check out
         my resume, posted below, for a quick overview.
         <a href="https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview"
-           onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;">
+           onclick="trackOutboundLink('https://drive.google.com/file/d/12FmoNDSBK1ata6Y_t--W9wvhIHCbpW04/preview'); return false;"><!--passes the outbound url to javascript function rendered in pagescripts section-->
             Click here to view and download a copy or do so below!
         </a>
         <div>
