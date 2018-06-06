@@ -1,66 +1,11 @@
-﻿//var homeHelper = (function ($) {
-//    "use strict";
-//    var module = {
-//        onready: function () {
-//            //validate that all properties are populated before setting things up
-//            var keys = Object.keys(this);
-//            var keysLength = keys.length;
-//            for (var i = 0; i < keysLength; i++) {
-//                if (this[keys[i]] === null) {
-//                    throw new Error(keys[i] + " needs to be initialized.");
-//                }
-//            }
-//            //allows for google analytics to recieve data from site about views and users of site
-//                /**
-//                * Function that tracks a click on an outbound link in Analytics.
-//                * This function takes a valid URL string as an argument, and uses that URL string
-//                * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-//                * using 'navigator.sendBeacon' in browser that support it.
-//                */
-//            var trackOutboundLink = function (url) {
-//                ga('send', 'event', 'outbound', 'click', url, {
-//                    'transport': 'beacon',
-//                    'hitCallback': function () {
-//                        document.location = url;
-//                        alert("YO!");
-//                    }
-//                });
-//            };
-//        }
-//    };
-//    return module;
-//})(jQuery);
+﻿/** Google Analytics **/
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-var analyticsHelper = (function ($) {
-    "use strict";
-    var module = {
-        url: null,
-        onready: function () {
-            var keys = Object.keys(this);
-            var keysLength = keys.Length;
-            for (var i = 0; i < keysLength; i++) {
-                if (this.[keys[i]] === null) {
-                    throw new Error(keys[i] + "needs to be initialized.");
-                }
-            }
-            //allows for google analytics to recieve data from site about views and users of site
-            /**
-            * Function that tracks a click on an outbound link in Analytics.
-            * This function takes a valid URL string as an argument, and uses that URL string
-            * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-            * using 'navigator.sendBeacon' in browser that support it.
-            */
-            var url = this.url;
-            trackOutboundLink: function $(url) {
-                ga('send', 'event', 'outbound', 'click', url, {
-                    'transport': 'beacon',
-                    'hitCallback': function () {
-                        document.location = url;
-                        alert("You are navigating to a new page");
-                    }
-                });
-            }
-        }
-    };
-    return module;
-})(jQuery);
+ga('create', 'UA-120225268-1', 'auto');
+ga('send', 'pageview');
+    /**End Google Analytics, Google analytics script which tracks user who visit site**/

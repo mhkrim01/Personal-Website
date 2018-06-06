@@ -3,26 +3,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<h2>Not Found!</h2>
-    <div>
-        <h2 style="text-align: center; border: 5px solid;">404's suck!</h2>
-        <div>
-            But, they are a part of life. Unfortunately for you, you encountered one...loser...
-            Enjoy this song by kendrick lamar about syrup sandwiches.
-            Or you could just go home
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-mPw174m0VE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>*@
+
 <h2 id="h2-head">404</h2>
 <h2 id="h3-head">
     Click the button and you win a magnificent prize
-    or be a loser and give up!
+    or be a failure, admit defeat, go home, and contemplate your existence as a failure.
 </h2>
 <div>
     <img src="https://media.giphy.com/media/ONs6WeZ8vOB3i/giphy.gif" />
 </div>
 
-<button id="button"><h2 id="h2-head">Click Me Punk!</h2></button>
+<button id="button"><h2><a href="@Url.Action("Index", "Home")">Click Me Punk!</a></h2></button>
 
 
 @section pagescripts{
